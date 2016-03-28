@@ -291,6 +291,20 @@ input.describe {
     text-decoration: underline;
 }
 
+.solution{
+  padding: 10px
+}
+
+.solution .text{
+  resize: none;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  height: 100%;
+  margin: -10px;
+}
+
 /*--- Style ---*/
 
 /*-- Responsive - Design --*/

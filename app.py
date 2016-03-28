@@ -30,7 +30,7 @@ def upload():
 		return 'file uploaded successfully'
 		# return redirect(url_for('uploaded_file',
 		#                         filename=filename))
-	return "DONE"
+	return render_template('processing.html')
 
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):
