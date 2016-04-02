@@ -1,88 +1,273 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>NLP Test</title>
-<link href="/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- Custom Theme files -->
-<link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- Custom Theme files -->
-<script src="/static/js/jquery.min.js"></script>
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="File Upload Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="text/javascript" src="/static/js/TweenLite.min.js"></script>
+<script type="text/javascript" src="/static/js/TweenMax.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery-1.8.3.min.js"></script>
+<title>Metro UI Html Template</title>
+<style>
+body{
+	margin:0;
+	background-color:#369;
+	overflow:auto;
+}
 
+#btn1{
+	background:#06F;
+	height:250px;
+	width:250px;
+	position:relative;
+	margin-left:10px;
+	left:1200px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+	
+	
+}
+#btn2{
+	background:#C30;
+	height:250px;
+	width:250px;
+	position:relative;
+	margin-left:10px;
+	left:1200px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+/*#btn3{
+	background:#F60;
+	border-color:#F60;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	left:900px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+#btn4{
+	background:#C3C;
+	border-color:#F60;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	margin-top:30px;
+	left:900px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+#btn5{
+	background:#F36;
+	border-color:#F60;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	margin-top:30px;
+	left:900px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+#btn6{
+	background:#6C0;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	margin-top:30px;
+	left:900px;
+	cursor:pointer;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+*/
+
+#content{
+	background:#369;
+	height:480px;
+	width:750px;
+	position:relative;
+	top:500px;
+	z-index:0;
+}
+
+#backbutton{
+	position:relative;
+	left:760px;
+	cursor:pointer;
+}
+
+#caption{
+	position:relative;
+	top:-60px;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#pagecaption{
+	position:relative;
+	top:-60px;
+	
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+</style>
 </head>
-<body>
 
-<h1>FILE UPLOAD WIDGET</h1>
+<body link="#FFFFFF">
+<!--header-->
+<div style="width:100%; height:80px; overflow:hidden; margin: 0 auto; background-color:#333">
 
-<div class="upload">
-			<h3>Select File</h3>
-		<div class="login-form">
-			<!-- <form>
-				<div>
-					<span>Title</span>
-						<input type="text" class="title" value="Eg: Beach Fun" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Eg: Beach Fun';}" />
-				</div>
-				<div>
-					<span>Description</span>
-						<input type="text" class="describe" value="Eg: The one in the Bahamas" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Eg: The one in the Bahamas';}" />
-				</div>
-			</form> -->
-
-			<form id="upload" action="uploader" method = "POST"  enctype="multipart/form-data">
-				<div id="drop">
-					<a>Choose</a>
-					<input type = "file" name = "file" />
-				</div>
-				<div>
-	         		<input type = "submit" value="Upload"/>
-				</div>
-
-				
-				<ul>
-				<!-- The file uploads will be shown here -->
-				</ul>
-
-			</form>
-		</div>
-
-		<!-- <form>
-
-		<div>
-			<span>Output</span>
-				<textarea class="title" name="res"></textarea>
-		</div>
-		</form> -->
-			
-	<!-- JavaScript Includes -->
-		<script src="/static/js/jquery.knob.js"></script>
-	<!-- JavaScript Includes -->
-
-	<!-- jQuery File Upload Dependencies -->
-		<script src="/static/js/jquery.ui.widget.js"></script>
-		<script src="/static/js/jquery.iframe-transport.js"></script>
-		<script src="/static/js/jquery.fileupload.js"></script>
-	<!-- jQuery File Upload Dependencies -->
+  <div style="width:750px; height:80px; margin: 0 auto; overflow:hidden; position:relative">
 		
-	<!-- Main JavaScript file -->
-		<script src="/static/js/script.js"></script>
-	<!-- Main JavaScript file -->
-	
+        <div id="caption" style="height:44px; margin-top:20px;float:left; margin-left:12px; position:absolute"> Company Title </div>
+        
+        <div id="backbutton" style="height:44px; width:44px; margin-top:15px; float:left; position:absolute"> <img src="imgs/backbtn.png" width="44" height="44" /> </div>
+        
+       <div id="pagecaption" style="height:44px; margin-top:20px;float:left; margin-left:12px; position:absolute"> Caption </div>
+  </div>
+
 </div>
 
-<div class="footer">
-     <!-- <p>Copyright &copy; 2015 File Upload Widget. All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p> -->
+<!--buttons-->
+<div style="width:750px; height:450px; overflow:hidden; margin: 0 auto; position:relative; margin-top:35px;">
+
+	<a href="{{ url_for('classify') }}" target="main"><div id="btn1" style="float:left"> <p> Classify Tweets </p> </div> </a>
+    <a href="{{ url_for('summarize') }}" target="main"><div id="btn2" style="float:left"> <p> Summarize Tweets </p> </div> </a>
+<!--     <a href="3.html" target="main"><div id="btn3" style="float:left"> <p> Who We Are? </p> </div> </a>
+    <a href="4.html" target="main"><div id="btn4" style="float:left"> <p> We on Map </p> </div> </a>
+    <a href="5.html" target="main"><div id="btn5" style="float:left"> <p> Contact Us </p> </div> </a>
+    <a href="6.html" target="main"><div id="btn6" style="float:left"> <p> Feedback </p> </div> </a> -->
+    <div id="content" style="position:absolute"> <iframe name="main" frameborder=0 height=450 width=750></iframe>  </div>
+    
 </div>
-	
+
+<!--footer-->
+<div style="width:100%; height:220px; overflow:hidden; margin: 0 auto; background-color:#333; margin-top:20px;">
+    <div style="width:750px; height:80px; margin: 0 auto;">
+    <p style="text-align:center; color:#FFF; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small">Free Template by <a href="http://www.techgyo.com">TechGyo</a> tech blog &copy; 2013 All rights reserved. </p>
+    <p style="text-align:center; color:#CCC; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small"> Koustav Rudra and Avijit Ghosh , IIT Kharagpur </p>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  TweenLite.to($("#caption"),2,{css:{top:0},delay:0.25, ease:Power2.easeOut});
+  TweenLite.to($("#btn1"),2,{css:{left:0},delay:0.5, ease:Power2.easeOut});
+  TweenLite.to($("#btn2"),2,{css:{left:20},delay:0.75, ease:Power2.easeOut});
+  // TweenLite.to($("#btn3"),2,{css:{left:40},delay:3, ease:Power2.easeOut});
+  // TweenLite.to($("#btn4"),2,{css:{left:0},delay:3.5, ease:Power2.easeOut});
+  // TweenLite.to($("#btn5"),2,{css:{left:20},delay:4, ease:Power2.easeOut});
+  // TweenLite.to($("#btn6"),2,{css:{left:40},delay:4.5, ease:Power2.easeOut});
+  
+  });
+  
+  
+ //  $("#btn1").click(function(){
+	//   TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	//   TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	//   TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	//   TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	//   $("#pagecaption").text("About Us");
+	 
+ //  });
+  
+ //  $("#btn2").click(function(){
+	//   TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	//   TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	//   TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	//   TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	//   $("#pagecaption").text("Our Products");
+	 
+ //  });
+  
+ //  $("#btn3").click(function(){
+	//   TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	//   TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	//   TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	//   TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	//   $("#pagecaption").text("Who We Are?");
+	 
+ //  });
+  
+ //  $("#btn4").click(function(){
+	//   TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	//   TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	//   TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	//   TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	//   $("#pagecaption").text("We on Map");
+	 
+ //  });
+  
+ //  $("#btn5").click(function(){
+	//   TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	//   TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	//   TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	//   TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	//   $("#pagecaption").text("Contact Us");
+	 
+ //  });
+  
+ //   $("#btn6").click(function(){
+	//   TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	//   TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	//   TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	//   TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	//   $("#pagecaption").text("Feedback");
+	 
+ //  });
+  
+  
+ //   $("#backbutton").click(function(){
+	//     TweenLite.to($("#content"),1,{css:{top:500}, ease:Power2.easeIn});
+	// 	TweenLite.to($("#backbutton"),1,{css:{left:760, rotation:0}, ease:Power2.easeIn});
+	// 	TweenLite.to($("#pagecaption"),1,{css:{top:-60}, ease:Power2.easeOut});
+	// 	TweenLite.to($("#caption"),1,{css:{top:0}, ease:Power2.easeOut});
+	// });   
+</script>	
+
 </body>
 </html>
