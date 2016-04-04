@@ -5,41 +5,41 @@
 <script type="text/javascript" src="/static/js/TweenLite.min.js"></script>
 <script type="text/javascript" src="/static/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="/static/js/jquery-1.8.3.min.js"></script>
-<title>Metro UI Html Template</title>
+<title>Tweet Analyser</title>
 <style>
 body{
 	margin:0;
-	background-color:#369;
+	background-color:#555;
 	overflow:auto;
 }
 
 #btn1{
-	background:#06F;
+	background:#EEFD80;
 	height:250px;
 	width:250px;
 	position:relative;
 	margin-left:10px;
 	left:1200px;
 	cursor:pointer;
-	
-	color:#FFF;
+
+	color:#555;
 	font-size:25px;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	line-height:300px;
 	padding-left:10px;
 	text-align:left;
-	
-	
+
+
 }
 #btn2{
-	background:#C30;
+	background:#4CAF50;
 	height:250px;
 	width:250px;
 	position:relative;
 	margin-left:10px;
 	left:1200px;
 	cursor:pointer;
-	
+
 	color:#FFF;
 	font-size:25px;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -57,7 +57,7 @@ body{
 	margin-left:10px;
 	left:900px;
 	cursor:pointer;
-	
+
 	color:#FFF;
 	font-size:25px;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -76,7 +76,7 @@ body{
 	margin-top:30px;
 	left:900px;
 	cursor:pointer;
-	
+
 	color:#FFF;
 	font-size:25px;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -94,7 +94,7 @@ body{
 	margin-top:30px;
 	left:900px;
 	cursor:pointer;
-	
+
 	color:#FFF;
 	font-size:25px;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -112,7 +112,7 @@ body{
 	margin-top:30px;
 	left:900px;
 	cursor:pointer;
-	
+
 	color:#FFF;
 	font-size:25px;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -140,7 +140,7 @@ body{
 #caption{
 	position:relative;
 	top:-60px;
-	
+
 	color:#FFF;
 	font-size:25px;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -149,7 +149,7 @@ body{
 #pagecaption{
 	position:relative;
 	top:-60px;
-	
+
 	color:#FFF;
 	font-size:25px;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -162,12 +162,12 @@ body{
 <div style="width:100%; height:80px; overflow:hidden; margin: 0 auto; background-color:#333">
 
   <div style="width:750px; height:80px; margin: 0 auto; overflow:hidden; position:relative">
-		
-        <div id="caption" style="height:44px; margin-top:20px;float:left; margin-left:12px; position:absolute"> Company Title </div>
-        
+
+        <div id="caption" style="height:44px; margin-top:20px;float:left; margin-left:12px; position:absolute"> Tweet Analyser </div>
+
         <div id="backbutton" style="height:44px; width:44px; margin-top:15px; float:left; position:absolute"> <img src="imgs/backbtn.png" width="44" height="44" /> </div>
-        
-       <div id="pagecaption" style="height:44px; margin-top:20px;float:left; margin-left:12px; position:absolute"> Caption </div>
+
+       <!-- <div id="pagecaption" style="height:44px; margin-top:20px;float:left; margin-left:12px; position:absolute"> Caption </div> -->
   </div>
 
 </div>
@@ -175,20 +175,20 @@ body{
 <!--buttons-->
 <div style="width:750px; height:450px; overflow:hidden; margin: 0 auto; position:relative; margin-top:35px;">
 
-	<a href="{{ url_for('classify') }}" target="main"><div id="btn1" style="float:left"> <p> Classify Tweets </p> </div> </a>
-    <a href="{{ url_for('summarize') }}" target="main"><div id="btn2" style="float:left"> <p> Summarize Tweets </p> </div> </a>
+	<a href="{{ url_for('classify') }}"><div id="btn1" style="float:left"> <p> Classify Tweets </p> </div> </a>
+    <a href="{{ url_for('summarize') }}"><div id="btn2" style="float:left"> <p> Summarize Tweets </p> </div> </a>
 <!--     <a href="3.html" target="main"><div id="btn3" style="float:left"> <p> Who We Are? </p> </div> </a>
     <a href="4.html" target="main"><div id="btn4" style="float:left"> <p> We on Map </p> </div> </a>
     <a href="5.html" target="main"><div id="btn5" style="float:left"> <p> Contact Us </p> </div> </a>
     <a href="6.html" target="main"><div id="btn6" style="float:left"> <p> Feedback </p> </div> </a> -->
     <div id="content" style="position:absolute"> <iframe name="main" frameborder=0 height=450 width=750></iframe>  </div>
-    
+
 </div>
 
 <!--footer-->
 <div style="width:100%; height:220px; overflow:hidden; margin: 0 auto; background-color:#333; margin-top:20px;">
     <div style="width:750px; height:80px; margin: 0 auto;">
-    <p style="text-align:center; color:#FFF; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small">Free Template by <a href="http://www.techgyo.com">TechGyo</a> tech blog &copy; 2013 All rights reserved. </p>
+   <!--  <p style="text-align:center; color:#FFF; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small">Free Template by <a href="http://www.techgyo.com">TechGyo</a> tech blog &copy; 2013 All rights reserved. </p> -->
     <p style="text-align:center; color:#CCC; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small"> Koustav Rudra and Avijit Ghosh , IIT Kharagpur </p>
     </div>
 </div>
@@ -202,72 +202,72 @@ $(document).ready(function(){
   // TweenLite.to($("#btn4"),2,{css:{left:0},delay:3.5, ease:Power2.easeOut});
   // TweenLite.to($("#btn5"),2,{css:{left:20},delay:4, ease:Power2.easeOut});
   // TweenLite.to($("#btn6"),2,{css:{left:40},delay:4.5, ease:Power2.easeOut});
-  
+
   });
-  
-  
+
+
  //  $("#btn1").click(function(){
 	//   TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
 	//   TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
 	//   TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
 	//   TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
 	//   $("#pagecaption").text("About Us");
-	 
+
  //  });
-  
+
  //  $("#btn2").click(function(){
 	//   TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
 	//   TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
 	//   TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
 	//   TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
 	//   $("#pagecaption").text("Our Products");
-	 
+
  //  });
-  
+
  //  $("#btn3").click(function(){
 	//   TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
 	//   TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
 	//   TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
 	//   TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
 	//   $("#pagecaption").text("Who We Are?");
-	 
+
  //  });
-  
+
  //  $("#btn4").click(function(){
 	//   TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
 	//   TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
 	//   TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
 	//   TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
 	//   $("#pagecaption").text("We on Map");
-	 
+
  //  });
-  
+
  //  $("#btn5").click(function(){
 	//   TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
 	//   TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
 	//   TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
 	//   TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
 	//   $("#pagecaption").text("Contact Us");
-	 
+
  //  });
-  
+
  //   $("#btn6").click(function(){
 	//   TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
 	//   TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
 	//   TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
 	//   TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
 	//   $("#pagecaption").text("Feedback");
-	 
+
  //  });
-  
-  
+
+
  //   $("#backbutton").click(function(){
 	//     TweenLite.to($("#content"),1,{css:{top:500}, ease:Power2.easeIn});
 	// 	TweenLite.to($("#backbutton"),1,{css:{left:760, rotation:0}, ease:Power2.easeIn});
 	// 	TweenLite.to($("#pagecaption"),1,{css:{top:-60}, ease:Power2.easeOut});
 	// 	TweenLite.to($("#caption"),1,{css:{top:0}, ease:Power2.easeOut});
-	// });   
-</script>	
+	// });
+</script>
 
 </body>
 </html>
