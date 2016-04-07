@@ -46,8 +46,8 @@ def summarize():
 
 
 # Route that will process the file upload
-@app.route('/uploader', methods=['POST'])
-def upload():
+@app.route('/uploaderclassify', methods=['POST'])
+def uploaderclassify():
 	file = request.files['file']
 	if file and allowed_file(file.filename):
 		# filename = secure_filename(file.filename)
@@ -55,6 +55,26 @@ def upload():
 		absolute_path = os.path.abspath(UPLOAD_FOLDER+filename)
 		file.save(absolute_path)
 		return 'file uploaded successfully'
+
+		#run code here
+
+	with open("output/abcd.txt", "r") as f:
+		content = f.read()
+	return render_template("processing.html", content=content)
+
+
+# Route that will process the file upload
+@app.route('/uploadersummary', methods=['POST'])
+def uploadersummary():
+	file = request.files['file']
+	if file and allowed_file(file.filename):
+		# filename = secure_filename(file.filename)
+		filename=time.strftime("%Y%m%d-%H%M%S")+".txt"
+		absolute_path = os.path.abspath(UPLOAD_FOLDER+filename)
+		file.save(absolute_path)
+		return 'file uploaded successfully'
+
+		#run code here
 
 	with open("output/abcd.txt", "r") as f:
 		content = f.read()
